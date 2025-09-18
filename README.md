@@ -1,16 +1,50 @@
-# appweb
+# To-Do List App
 
-A new Flutter project.
+Um aplicativo simples de Lista de Tarefas feito em Flutter.
 
-## Getting Started
+## Funcionalidades
+- Adicionar nova tarefa
+- Editar tarefa
+- Marcar tarefa como concluída
+- Remover tarefa
+- Filtrar tarefas (todas, pendentes, concluídas)
+- Interface moderna com cards, animações e tema escuro/claro
+- Persistência local das tarefas
 
-This project is a starting point for a Flutter application.
+## Como executar
 
-A few resources to get you started if this is your first Flutter project:
+1. Instale as dependências:
+   ```bash
+   flutter pub get
+   ```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+2. Execute o app:
+   - Web:
+     ```bash
+     flutter run -d chrome
+     ```
+   - Android:
+     ```bash
+     flutter run -d emulator-5554
+     ```
+   - Desktop (Linux, Windows, macOS):
+     ```bash
+     flutter run -d linux
+     ```
+     (ou troque `linux` por `windows` ou `macos` conforme seu sistema)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Estrutura do projeto
+- `lib/models/task.dart`: Modelo da tarefa
+- `lib/utils/storage.dart`: Persistência local
+- `lib/screens/home_screen.dart`: Tela principal
+- `lib/widgets/task_input.dart`: Campo de entrada de tarefa
+- `lib/widgets/task_tile.dart`: Item visual de tarefa
+- `pubspec.yaml`: Dependências do projeto
+
+## Observações
+- O projeto pode ser executado em web, Android, Windows, Linux e macOS.
+- Para entregar, suba o código no GitHub e envie o link conforme solicitado.
+
+---
+
+Feito para fins acadêmicos.
