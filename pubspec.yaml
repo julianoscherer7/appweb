@@ -1,0 +1,29 @@
+name: appweb
+description: Um aplicativo simples de lista de tarefas feito em Flutter.
+publish_to: "none" 
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Gerar IDs únicos para as tarefas
+  uuid: ^3.0.7
+
+  # Persistência local simples
+  shared_preferences: ^2.2.0
+
+  # Ícones do Material Design
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
